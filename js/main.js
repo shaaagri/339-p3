@@ -82,7 +82,7 @@ class BgAnimation {
     maxIcons = 100;
     icons = [];
     spacing = 280.0;  // icons spacing radius
-    updateRate = 15.0;  // times per second
+    updateRate = 5.0;  // times per second
 
     constructor(updateRate) {
         this.updateRate = updateRate;
