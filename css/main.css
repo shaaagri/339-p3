@@ -81,6 +81,7 @@ body {
 a, a:visited {
     color: var(--color-accent-alt);
     text-decoration: none;
+    overflow-wrap: anywhere;
 }
 
 a:hover, a:focus {
@@ -794,7 +795,6 @@ section.large-block {
     left: 0;
     bottom: 0;
     right: 0;
-
     overflow: hidden;
     z-index: -9999;
 }
@@ -914,7 +914,9 @@ section.large-block {
 }
 
 /* 
+    ================
     Responsive stuff
+    ================
 */
 
 @media (max-width: 1100px) {
@@ -997,12 +999,13 @@ section.large-block {
 
 @media (max-width: 576px) {
     html {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     h1 {
         line-height: 1.5em;
     }
     #site-header {
+        font-size: 0.7rem;
         text-align: center;
     }
     #site-header .justified-container {
@@ -1016,6 +1019,7 @@ section.large-block {
         padding-top: 0;
         padding-bottom: 7.33rem;
         padding-left: 0;
+        padding-right: 0;
     }
     #hero-header {
         padding-left: 0;
@@ -1035,7 +1039,8 @@ section.large-block {
     #main-nav .main-nav-button {
         width: 12.5rem;
         height: 4.779rem;
-        font-size: 1.7em;
+        font-size: 2.2em;
+        padding-top: 0.13em;
     }
     #project-header {
         padding-bottom: 6rem;
@@ -1062,10 +1067,39 @@ section.large-block {
     p {
         width: clamp(20ch, 100%, 48ch);
     }
-    #main-nav {
-        grid-template-columns: 1fr;
-    }
+
     #hero-header, #page-header {
-        padding: 1rem 0 5rem 0;
+        padding: 0 0 5rem 0;
     }
+
+    .grid-container-2 {
+        column-gap: 0.4em;
+    }
+
+    .styleguide-buttons-demo-block {
+        row-gap: 1.66em;
+    }
+}
+
+/* 
+    =============
+    Optimizations
+    =============
+*/
+
+/* 
+    preloading buttons' hovers to avoid that first-time blink 
+    
+    citation used:
+    https://stackoverflow.com/questions/3646036/preloading-images-with-javascript
+*/
+
+#preload-images {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: url(../img/ui/nav-button__blue--hover.svg), url(../img/ui/nav-button__green--hover.svg), url(../img/ui/nav-button__red--hover.svg), url(../img/ui/nav-button__yellow--hover.svg), url(../img/ui/button-action__short--hover.svg), url(../img/ui/button-action__med--hover.svg), url(../img/ui/button-default__long--hover.svg);
 }

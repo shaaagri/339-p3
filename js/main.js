@@ -58,7 +58,7 @@ class BgAnimationIcon {
 
         // popping the new icons unevenly to make the background more interesting
         let delay = Math.random() * 10;
-        $('#' + this.id).css('animation-delay', delay+'s');
+        $('#' + this.id).css('animation-delay', delay + 's');
 
         switch (rot) {
             case 1:
@@ -93,8 +93,6 @@ class BgAnimation {
     }
 
     update() {
-        // here using bgAnim instead of this, because setInterval is called from the Window context
-
         if (this.icons.length < this.maxIcons) {
             // generating random position for the next icon
             let iconX = Math.round(Math.random() * document.body.clientWidth);
@@ -109,7 +107,6 @@ class BgAnimation {
 
                 // if the new icon got too close to one of the existing ones,
                 // skip and try our luck during the next cycle
-
                 if (dist < bgAnim.spacing) {
                     validPos = false;
                     return;
