@@ -51,7 +51,7 @@ class BgAnimationIcon {
         let icon = Math.floor(Math.random() * 11);
         //console.log(this.id, this.x, this.y, rot, icon);
 
-        $("#page-container").append("<div id='" + this.id + "'class='bg-anim__icon'><div class='bg-anim__icon-rotate'><div class='bg-anim__icon-" + icon + "'></div></div></div>");
+        $("#bg-anim-container").append("<div id='" + this.id + "'class='bg-anim__icon'><div class='bg-anim__icon-rotate'><div class='bg-anim__icon-" + icon + "'></div></div></div>");
 
         $('#' + this.id).css('left', x);
         $('#' + this.id).css('top', y);
@@ -98,7 +98,7 @@ class BgAnimation {
         if (this.icons.length < this.maxIcons) {
             // generating random position for the next icon
             let iconX = Math.round(Math.random() * document.body.clientWidth);
-            let iconY = Math.round(Math.random() * document.body.clientHeight-400);
+            let iconY = Math.round(Math.random() * document.body.clientHeight);
 
             // checking the position
             let validPos = true;

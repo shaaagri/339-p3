@@ -72,6 +72,7 @@ html {
 }
 
 body {
+    position: relative;
     font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -363,7 +364,7 @@ section.large-block {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12.5rem; 
+    width: 12.5rem;
     height: 4.779rem;
     padding-top: 0.166rem;
     background-size: 102%;
@@ -787,6 +788,17 @@ section.large-block {
 
 /* for the background animation */
 
+#bg-anim-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    overflow: hidden;
+    z-index: -9999;
+}
+
 .bg-anim__icon {
     position: absolute;
     top: 0;
@@ -911,21 +923,17 @@ section.large-block {
         grid-template-columns: min-content min-content;
         gap: 2.5rem;
     }
-
     #styleguide-container {
         grid-template-columns: 20.66rem 1fr;
     }
-
     #project-header {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
     #project-header .h-centered-container {
         flex-direction: column;
         padding-top: 1rem;
     }
-    
     .project-info-card {
         grid-template: none;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -933,13 +941,11 @@ section.large-block {
         height: auto;
         padding-bottom: 2rem;
     }
-
     #project-header .project-description {
         width: 85%;
         max-width: none;
         padding: 2.33rem 4.66rem;
     }
-
     .project-header__tags {
         position: static;
         display: flex;
@@ -960,37 +966,30 @@ section.large-block {
         grid-template-columns: min-content;
         gap: 2.5rem;
     }
-
     #site-header {
         padding: 1rem;
         padding-top: 2rem;
     }
-
     #main-nav .main-nav-button {
         width: 10rem;
         height: 3.8232rem;
         font-size: 1.33em;
     }
-
     #styleguide-container {
         grid-template-columns: 1fr;
     }
-
     #styleguide-nav {
         display: none !important;
     }
-
     #project-header .project-description {
         width: 100%;
         max-width: none;
         padding: 2.33rem 0;
     }
-
     .project-header__tags {
         position: static;
         justify-content: flex-start;
     }
-
     #project-breakdown {
         padding: 0;
     }
@@ -1000,64 +999,51 @@ section.large-block {
     html {
         font-size: 0.7rem;
     }
-
     h1 {
         line-height: 1.5em;
     }
-
     #site-header {
         text-align: center;
     }
-
     #site-header .justified-container {
         flex-direction: column;
         gap: 1rem;
     }
-
     #site-header__job-title {
         font-size: 1.55rem;
     }
-
     #hero-header, #page-header, #project-header {
         padding-top: 0;
         padding-bottom: 7.33rem;
         padding-left: 0;
     }
-
     #hero-header {
         padding-left: 0;
         padding-right: 0;
     }
-
     #page-header {
         padding-bottom: 2rem;
     }
-
     #styleguide-container {
         padding: 0;
     }
-
     #main-nav {
         display: inline-grid;
         grid-template-columns: min-content min-content;
         grid-gap: 1rem;
     }
-
     #main-nav .main-nav-button {
-        width: 12.5rem; 
+        width: 12.5rem;
         height: 4.779rem;
         font-size: 1.7em;
     }
-
     #project-header {
         padding-bottom: 6rem;
     }
-
     .project-info-card {
         grid-template: 1fr 1fr / 1fr 1fr;
         font-size: 1.15em;
     }
-
     #project-breakdown .example-block {
         padding-left: 0;
         padding-right: 0;
@@ -1076,11 +1062,9 @@ section.large-block {
     p {
         width: clamp(20ch, 100%, 48ch);
     }
-
     #main-nav {
         grid-template-columns: 1fr;
     }
-
     #hero-header, #page-header {
         padding: 1rem 0 5rem 0;
     }
