@@ -17,7 +17,7 @@
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-    src: url(../fonts/ChicagoFLF.ttf) format('truetype');
+    src: url('https://fontlibrary.org/assets/fonts/chicagoflf/a2e4a3d14e40fa7076a0a1bc06f3de43/d7982e4c4d683e1fe63fdefd5100f1e3/ChicagoFLFRegular.ttf') format('truetype');
 }
 
 /* copied from Google Fonts https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap */
@@ -457,7 +457,7 @@ section.large-block {
 }
 
 #hero-header p {
-    max-width: 38rem;
+    max-width: 39rem;
     margin: auto;
     text-align: left;
 }
