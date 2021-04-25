@@ -457,8 +457,9 @@ section.large-block {
 }
 
 #hero-header p {
-    max-width: 40rem;
+    max-width: 38rem;
     margin: auto;
+    text-align: left;
 }
 
 #project-header {
