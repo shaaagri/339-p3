@@ -166,11 +166,14 @@ p.minor {
 }
 
 ul {
+    position: relative;
     padding-top: 0.5em;
     list-style: none;
 }
 
 ul li::before {
+    position: absolute;
+    left: 1.33em;
     /* tutorial used: https://www.w3schools.com/howto/howto_css_bullet_color.asp */
     display: inline-flex;
     justify-content: center;
@@ -182,12 +185,14 @@ ul li::before {
     color: var(--color-bg-alt);
     font-size: 2em;
     font-weight: bold;
+    line-height: 0.7em;
     vertical-align: middle;
 }
 
 ul li {
     line-height: 1.66em;
     padding-bottom: 1em;
+    text-indent: 2em;
 }
 
 .block-caption {
@@ -473,7 +478,7 @@ section.large-block {
 }
 
 #hero-header p {
-    max-width: 39rem;
+    max-width: 38rem;
     margin: auto;
     text-align: left;
 }
@@ -1064,6 +1069,12 @@ section.large-block {
     }
     h1 {
         line-height: 1.5em;
+    }
+    ul li {
+        text-indent: 1.66em;
+    }
+    ul li::before {
+        line-height: 0.8em;
     }
     #site-header {
         font-size: 0.7rem;
