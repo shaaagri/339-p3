@@ -30,6 +30,14 @@ $('h2').each(function (index) {
     }
 });
 
+// reduces examples margins in process pages when they are the last ones in a
+// section (looks better)
+$('.example-block, .example-block-video').each(function (index) {
+    if ($(this).next().length == 0) {
+        $(this).addClass('reduced');
+    }
+});
+
 
 // background animation (icons popping in/out randomly)
 

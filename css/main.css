@@ -73,26 +73,33 @@ html {
 
 body {
     position: relative;
-    font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
     background-color: var(--color-bg);
     color: var(--color-text);
+    font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
+    letter-spacing: -0.01em;
 }
 
 a, a:visited {
     color: var(--color-accent-alt);
     text-decoration: none;
     overflow-wrap: anywhere;
+    transition: .2s;
 }
 
 a:hover, a:focus {
     color: var(--color-accent);
     cursor: pointer;
+    transition: none;
 }
 
 img {
     width: 100%;
     padding-top: 1.8125rem;
     padding-bottom: 1.4rem;
+}
+
+img.smaller {
+    max-height: 23.33rem !important;
 }
 
 b, strong {
@@ -146,7 +153,7 @@ h2.bodyfont {
 p {
     width: clamp(20ch, 100%, 80ch);
     font-size: 1.05rem;
-    line-height: 1.8rem;
+    line-height: 1.66rem;
 }
 
 p.minor {
@@ -176,6 +183,11 @@ ul li::before {
     font-size: 2em;
     font-weight: bold;
     vertical-align: middle;
+}
+
+ul li {
+    line-height: 1.66em;
+    padding-bottom: 1em;
 }
 
 .block-caption {
@@ -527,6 +539,7 @@ section.large-block {
 
 .project-card:hover, .project-card:focus {
     background-color: #ddf748;
+    transition: none;
 }
 
 .project-card__preview {
@@ -651,10 +664,41 @@ section.large-block {
 
 #project-breakdown p {
     width: 100%;
+    line-height: 1.5em;
+}
+
+#project-breakdown img {
+    width: 100%;
+    height: 100%;
+    padding-top: 0.33rem;
+    max-height: 33.33rem;
+    object-fit: contain;
+}
+
+#project-breakdown li {
+    line-height: 1.5em;
+}
+
+#project-breakdown__preview-video {
+    display: flex;
+    justify-content: center;
+    margin-top: -0.33rem;
+    padding-bottom: 7rem !important;
 }
 
 #project-breakdown .example-block {
     padding: 1.33rem 8rem 2.207rem 8rem;
+}
+
+#project-breakdown .example-block-video {
+    display: flex;
+    justify-content: center;
+    padding: 1.33rem 0 2.207rem 0;
+}
+
+#project-breakdown .example-block.reduced,
+#project-breakdown .example-block-video.reduced {
+    padding: 1.33rem 0 0 0;   
 }
 
 #project-breakdown__process h2 {

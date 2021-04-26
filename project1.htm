@@ -40,7 +40,7 @@
                     <aside class="project-info-card">
                         <div class="info-block">
                             <h4>Type</h4>
-                            <p>university project</p>
+                            <p>university assignment</p>
                         </div>
                         <div class="info-block">
                             <h4>Team</h4>
@@ -48,82 +48,220 @@
                         </div>
                         <div class="info-block">
                             <h4>My Role</h4>
-                            <p>lead programmer</p>
+                            <p>environment artist</p>
                         </div>
                         <div class="info-block">
                             <h4>Tools</h4>
-                            <p>unity, c#</p>
+                            <p>unity, adobe photoshop</p>
                         </div>
                     </aside>
-                    <p class="project-description">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                        Donec sed elementum ligula. Aliquam eu lacus
-                        pellentesque, iaculis elit non, tempus enim.
-                        Pellentesque orci mi, blandit ut risus quis, pulvinar
-                        laoreet nulla. Nam viverra arcu non leo placerat
-                        finibus. Phasellus ullamcorper varius sem hendrerit
-                        pretium. Ut auctor tempus risus, eget congue leo maximus
-                        a.
+                    <p class="project-description">For the course IAT 445
+                        Immersive Environments in SFU, dedicated to learning Unity
+                        and VR, I completed a medium-sized scene, driven by
+                        atmosphere and exploration.
                     </p>
                 </div>
 
                 <div class="project-header__tags">
                     <div>unity</div>
-                    <div>c#</div>
                     <div>level design</div>
+                    <div>lighting design</div>
                 </div>
             </header>
 
             <main id="project-breakdown">
+                <section id="project-breakdown__preview-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WQF_fn_ZDHc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </section>
+
                 <section id="project-breakdown__process">
                     <h2>Process</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec sed elementum ligula. Aliquam eu lacus pellentesque,
-                        iaculis elit non, tempus enim. Pellentesque orci mi, blandit
-                        ut risus quis, pulvinar laoreet nulla. Nam viverra arcu non
-                        leo placerat finibus. Phasellus ullamcorper varius sem
-                        hendrerit pretium. Ut auctor tempus risus, eget congue leo
-                        maximus a.</p>
+                    <p>This was the first major assignment of the course (2
+                        weeks to complete), and its prompt was to create a simple 3D
+                        environment in Unity that is walkable in first-person
+                        perspective.<br><br>
+                        As it's often the case, I didn't really know where to
+                        start, so first I tried to list what are the key goals I
+                        have (required by the assignment):</p>
+                    <ul>
+                        <li>Need to use Terrain tool (a feature in Unity for
+                            quick modeling of landscapes).</li>
+                        <li>Need to have trees, outdoor lighting, and fog.</li>
+                        <li>Need to have audio sources, and a few simple
+                            buildings somewhere, modeled from scratch.</li>
+                    </ul>
+                    <p>
+                        Besides a couple of more small requirements, the rest
+                        was left to students (yes, a lot of creative freedom).
+                        So I tried to think what also <em>I</em> would like to
+                        see in this environment:
+                    </p>
+                    <ul>
+                        <li>The use of Terrain and other assets should make
+                            total sense and feel integrated. It is easy to just
+                            check the boxes dropping things randomly, but I did not
+                            want that.</li>
+                        <li>The scene should be interesting, captivating,
+                            inciting to explore it.</li>
+                        <li>There should be some overall theme, or mood.</li>
+                    </ul>
+                    <p>
+                        Armed with that "roadmap", I began crafting the scene.
+                        Obviously, the Terrain was the largest part of this
+                        scene and really the foundation of it, so first I tried
+                        to sculpt some hills and mountains, hoping to get a
+                        clearer picture of the scene I want in the process.
+                        Initially, I was imagining some kind of Arizona/Utah
+                        desert, with an Interstate highway cutting through it,
+                        and, maybe, a gas station.
+                    </p>
                     <div class="example-block">
-                        <img src="img/wire-image.svg" alt="">
+                        <img src="img/work/project1/001_terrain_basic.jpg"
+                            alt="screenshot from unity with a basic terrain">
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec sed elementum ligula. Aliquam eu lacus pellentesque,
-                        iaculis elit non, tempus enim. Pellentesque orci mi, blandit
-                        ut risus quis, pulvinar laoreet nulla. Nam viverra arcu non
-                        leo placerat finibus. Phasellus ullamcorper varius sem
-                        hendrerit pretium. Ut auctor tempus risus, eget congue leo
-                        maximus a.<br><br>
+                    <p>I eschewed the assignment's recommendation of using
+                        smaller landscapes because I felt what I'm really after here
+                        is that sense of being small in larger surroundings, with
+                        tall mountains at the horizon, etc.<br><br>
+                        I decided one scene's corner will be a flat lowland and
+                        the main area where I will put the most of the required
+                        assets, and where the player is going to be spawned
+                        first. The opposite corner was turned into a supertall
+                        mountain (maxed out the Terrain's possible heights,
+                        actually), to serve as a contrast to the main area, and
+                        as the "architectural dominant" for the whole scene.</p>
+                    <div class="example-block">
+                        <img src="img/work/project1/002_terrain_far_peak.jpg" alt="screenshot from unity with a ground level view of a
+                        tall peak">
+                    </div>
+                    <p>
+                        Next, I began to work out the dense forest that in my
+                        vision should have been separating the two corners. This
+                        was when I realized I want the scene to be actually set
+                        at night, allowing for a more mysterious, "what's
+                        lurking behind" feel - somewhat surreal and a bit
+                        childish even. A very long browsing process had
+                        followed, until I found a perfect skybox.
+                    </p>
+                    <div class="example-block">
+                        <img src="img/work/project1/003_starry_night_skybox.jpg"
+                            alt="borrowed 2d asset example - a starry skybox">
+                    </div>
+                    <p>
+                        Now, having a more salient visual direction allowed me
+                        to quickly come up with ideas for the lighting and fog
+                        parts. I rearranged and fleshed out the terrain,
+                        carefully distributing trees to create a natural look.
+                        Some areas remained a desert, while others became
+                        extremely dense, lush forests (I really wanted this
+                        variety to keep the scene interesting for exploration).
+                    </p>
+                    <div class="example-block">
+                        <img src="img/work/project1/004_new_night_terrain.jpg" alt="screenshot from unity with the fleshed out terrain
+                        set at night">
+                    </div>
+                    <p>
+                        Once that was done, I only needed to flesh out the main
+                        area where the player spawns. I finely sculpted the
+                        terrain a bit more here, to get a feeling of the space I
+                        wanted, and put some foliage.
+                    </p>
+                    <div class="example-block">
+                        <img src="img/work/project1/005_main_area.jpg" alt="screenshot from unity with the main area and
+                        foliage">
+                    </div>
+                    <p>
+                        I still felt very attracted to my initial idea, though,
+                        of the road stop at a gas station - so next I modeled
+                        and textured a convenience store and gas pumps in Unity
+                        ProBuilder. I decided the scene, in the end, will play
+                        out as if there was some person travelling through this
+                        zone, abandoned and desolated due to some slowly
+                        unfolding paranormal accident.
+                    </p>
+                    <div class="example-block">
+                        <img src="img/work/project1/006_gas_station.jpg"
+                            alt="screenshot from unity with the gas station and convenience store">
+                    </div>
+                    <p>
+                        I deliberately chose a retro, 70s look when texturing
+                        the station, to underscore that subtle surreal touch.
+                    </p>
+                    <div class="example-block">
+                        <img src="img/work/project1/007_gas_pump.jpg"
+                            alt="screenshot from unity showing retro look of the gas pumps">
+                    </div>
+                    <p>
+                        The lighting also became very fitting for the mood I was
+                        after. I enhanced it further with an electronic remix of
+                        a kids song <em>"Clouds, Like a Little White
+                            Horses"</em> from a classic Russian cartoon. Together
+                        with the ambient wind whooshing sounds, it gave the
+                        scene more of that desolated, fragile, and a little
+                        heart-aching mood.
+                    </p>
+                    <div class="example-block-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aaj6YpJLCww"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        I also carefully selected and added ambient sounds for the forest, one can hear them upon
+                        entering the most dense area.
+                    </p>
+                    <div class="example-block-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jGbcXjzPsF4"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        The woods are important for the narrative, because they
+                        are the origin of the cold that consumes the region. I
+                        was somewhat inspired by Twin Peaks that similarly
+                        employed the "evil in the woods" trope - the <a
+                            href="https://twinpeaks.fandom.com/wiki/Glastonbury_Grove">Glastonbury
+                            Grove</a>, in particular. To reinforce the narrative and
+                        make the forest area more interesting, I added, as a
+                        last touch, a creepy pit with a pool that illuminates
+                        trees and emits sound. It is probably better to stay
+                        away from it :)
+                    </p>
+                    <div class="example-block-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HK6cKHsZj7I"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec sed elementum ligula. Aliquam eu lacus pellentesque,
-                        iaculis elit non, tempus enim. Pellentesque orci mi, blandit
-                        ut risus quis, pulvinar laoreet nulla. Nam viverra arcu non
-                        leo placerat finibus. Phasellus ullamcorper varius sem
-                        hendrerit pretium. Ut auctor tempus risus, eget congue leo
-                        maximus a.</p>
                 </section>
 
                 <section id="project-breakdown__outcome">
                     <h2>Outcome</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec sed elementum ligula. Aliquam eu lacus pellentesque,
-                        iaculis elit non, tempus enim. Pellentesque orci mi, blandit
-                        ut risus quis, pulvinar laoreet nulla. Nam viverra arcu non
-                        leo placerat finibus. Phasellus ullamcorper varius sem
-                        hendrerit pretium. Ut auctor tempus risus, eget congue leo
-                        maximus a.</p>
+                    <p>The assignment was successful. I got the full mark of A+,
+                        and a bit of praise from the teaching assistant, who is a
+                        very knowledgeable expert in the domain.</p>
+                    <div class="example-block">
+                        <img class="smaller" src="img/work/project1/008_outcome.jpg"
+                            alt="screenshot from sfu canvas showing the grade and ta feedback">
+                    </div>
                 </section>
 
                 <section id="project-breakdown__reflection">
-                    <h2>Reflection</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec sed elementum ligula. Aliquam eu lacus pellentesque,
-                        iaculis elit non, tempus enim. Pellentesque orci mi, blandit
-                        ut risus quis, pulvinar laoreet nulla. Nam viverra arcu non
-                        leo placerat finibus. Phasellus ullamcorper varius sem
-                        hendrerit pretium. Ut auctor tempus risus, eget congue leo
-                        maximus a.</p>
+                    <h2>Final Thoughts</h2>
+                    <p>Prior to this assignment, I had very limited experience
+                        with Unity, so it was my first major experience with the
+                        engine. The requirement to use the built-in ProBuilder
+                        instead of familiar Maya was particularly challenging. I
+                        also had to learn a lot about the Unity basics before being
+                        able to make anything useful.<br><br>
+                        However, once I got the learning done, everything
+                        started to come together, and in the end I enjoyed the
+                        result very much. The assignment made me prepared for
+                        the more advanced Unity work of the next three projects.
+                    </p>
                 </section>
             </main>
 
