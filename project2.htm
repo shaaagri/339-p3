@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grigory gogin | game developer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <header id="site-header">
+            <div class="justified-container">
+                <div id="site-header__name"><a href="index.htm">Grigory Gogin</a></div>
+                <div id="site-header__job-title">Game Developer</div>
+            </div>
+            <nav id="main-nav" class="justified-container">
+                <a class="main-nav-button blue" href="index.htm">Home</a>
+                <a class="main-nav-button yellow" href="index.htm#project-cards">Work</a>
+                <a class="main-nav-button green">About</a>
+                <a class="main-nav-button red" href="mailto:ggogin@sfu.ca">Contacts</a>
+            </nav>
+        </header>
+
+        <div id="content-container">
+            <header id="project-header">
+                <h1>King's Cross</h1>
+
+                <div class="h-centered-container">
+                    <aside class="project-info-card">
+                        <div class="info-block">
+                            <h4>Type</h4>
+                            <p>university assignment</p>
+                        </div>
+                        <div class="info-block">
+                            <h4>Team</h4>
+                            <p>individual<br>
+                        </div>
+                        <div class="info-block">
+                            <h4>My Role</h4>
+                            <p>3d modeler, environment artist</p>
+                        </div>
+                        <div class="info-block">
+                            <h4>Tools</h4>
+                            <p>unity, adobe photoshop, adobe audition</p>
+                        </div>
+                    </aside>
+                    <p class="project-description" style="initial-letter: 2em;">
+                        As part of the second Unity assignment of IAT 455 course
+                        (the previous one was covered <a href="project1.htm">here</a>), I loosely recreated the
+                        King's Cross railway station in London, which, among
+                        other things, is famous as Harry Potter's departure
+                        point on his way to Hogwarts.
+                    </p>
+                </div>
+
+                <div class="project-header__tags">
+                    <div>unity</div>
+                    <div>level design</div>
+                    <div>c#</div>
+                </div>
+            </header>
+
+            <main id="project-breakdown">
+                <section id="project-breakdown__preview-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WuQVzeHJhPM"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+
+
+                <section id="project-breakdown__process">
+                    <h2>Process</h2>
+                    <p>Due to the open-ended nature of our assignments in that
+                        course, the most challenging stage was, again, coming up
+                        with the initial concept for the scene. I looked up at the
+                        brief and remembered my friend mentioning Harry Potter
+                        series in our talk. I started to think about what related to
+                        that theme can I make that meets the requirements, and
+                        landed on King's Cross. This is mostly because modeling a
+                        railway station seemed pretty straightforward to me,
+                        compared to other landmarks from the HP universe.<br /><br />To get the reference, I went to
+                        watch the scene from one
+                        of the old Harry Potter movies, where Harry goes to the
+                        Platform 9¾ for the first time.
+                    </p>
+                    <div class="example-block-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KWcxgrg4eQI"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>From there, I was able to estimate the amount of work,
+                        which did not seem bad - the architecture of the station is
+                        quite repetitive. I went to collect more photos shot inside
+                        the King's Cross from various angles.</p>
+                    <div class="example-block">
+                        <img src="img/work/project2/001_refs.jpg" alt="screenshot from windows explorer with reference
+                        photos collected">
+                    </div>
+                    <p>Not only I gathered enough material to model after, these
+                        photos were also later used to make flat textures out of
+                        their cut parts.<br /><br /> I began to model only to run
+                        into a frustrating challenge - Maya was allowed this time,
+                        but it refused to launch on my computer. Due to a tight
+                        deadline, I had to fall back to the ProBuilder, which is far
+                        less powerful. Nonetheless, after watching LinkedIn Lynda
+                        tutorials I figured out the tools I needed, more or less. I
+                        eschewed any further planning and just dived into making
+                        the things, starting with train platforms.</p>
+                    <div class="example-block">
+                        <img src="img/work/project2/002_standalone_platform.jpg"
+                            alt="screenshot from unity showing a train platform being modeled">
+                    </div>
+                    <p>Afterwards, I began to meticulously model the walls of
+                        King's Cross, borrowing textures where appropriate, or using
+                        Photoshop to make ones out of reference images. All the
+                        scales and proportions were just eyeballed.</p>
+                    <div class="example-block">
+                        <img class="smaller" src="img/work/project2/003_standalone_wall.jpg"
+                            alt="screenshot from unity showing a wall segment">
+                    </div>
+                    <p>I just duplicated this segment to get the actual wall,
+                        altering textures of some to imitate side entrances. The
+                        roof and adjacent parts were very tricky to make. I
+                        eventually got away by using ProBuilder's Arch tool,
+                        seamlessly connecting various pieces, and then duplicating
+                        everything once again.</p>
+                    <div class="example-block">
+                        <img class="smaller" src="img/work/project2/004_wall_plus_arches.jpg" alt="screenshot from unity showing a wall with roof
+                        arches">
+                    </div>
+                    <p>From there, I prepared a roof texture and used the Arch
+                        tool with different parameters to insert glass panels into
+                        the roof.</p>
+                    <div class="example-block">
+                        <img class="smaller" src="img/work/project2/005_glass_roof.jpg"
+                            alt="screenshot from unity showing glass roof">
+                    </div>
+                    <p>I continued to fill in details, such as these platform
+                        stands and the sunny lighting.</p>
+                    <div class="example-block">
+                        <img src="img/work/project2/006_stands.jpg"
+                            alt="screenshot from stands next to a train platform">
+                    </div>
+                    <p>The assignment had us integrate at least one borrowed
+                        model, and create a particle system somewhere. I unified
+                        these two requirements by placing a diesel locomotive with
+                        thick smoke (made using Unity's Visual Effect Graph) coming
+                        from its exhaust.</p>
+                    <div class="example-block-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/18wrmNN9bTw"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>The assignment also had us practice collision detectors,
+                        so I came up with this improvised scene where some clumsy
+                        porter let oranges come out of cargo boxes. If you step on
+                        them, they get squished with a sound, leaving a splash on
+                        the floor. The same happens if a cart nearby rolls over
+                        them. All this was coded in C#.</p>
+                    <div class="example-block-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yz9EKChS-JU"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>One more requirement was to have a hinge joint, so I made
+                        this storeroom with a door on hinges that squeaks if it
+                        swings too hard (it works by testing the door's angular
+                        velocity).</p>
+                    <div class="example-block-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uGu2PPVml9A"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <p>I also modeled the catwalk that can be seen in the
+                        reference video - Harry walks on it with Hagrid. As the
+                        final touch, I added the actual transition to the magical
+                        Platform 9¾. Except there is no owl in the cart.</p>
+                    <div class="example-block-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0p1ZoCx0hVA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </section>
+
+                <section id="project-breakdown__outcome">
+                    <h2>Outcome</h2>
+                    <p>This project was a total success, especially when
+                        considering the challenges I faced and the fact I was still
+                        learning Unity. The feedback from the teaching staff was
+                        very positive - full mark.</p>
+                    <div class="grid-container-2">
+                        <div class="example-block">
+                            <img class="smaller" src="img/work/project2/007_grade.jpg"
+                                alt="screenshot from sfu canvas showing the grade and ta feedback">
+                        </div>
+                        <div>
+                            <div class="example-block">
+                                <img class="smaller" src="img/work/project2/008_grade_rubric.jpg"
+                                    alt="screenshot from grade rubric doc filled by teaching staff">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <section id="project-breakdown__reflection">
+                    <h2>Final Thoughts</h2>
+                    <p>I had a lot of fun completing this project. I still feel
+                    it was somewhat too ambitious trying to recreate the whole
+                    station - I ended up with just an approximation. However, I
+                    feel happy that none of the challenges I faced had become
+                    obstacles - rather they just posited questions I had to find
+                    creative answers to.</p>
+                </section>
+
+                <div class="justified-container">
+                    <a class="button-default" href="project1.htm">Prev</a>
+                    <a class="button-default" href="project1.htm">Next</a>
+                </div>
+            </main>
+
+            <footer id="site-footer">
+                <hr>
+                <div id="site-footer__contact-me"><a class="button-action" href="mailto:ggogin@sfu.ca">contact me</a></div>
+                <div id="site-footer__author"><strong>© 2021 Grigory Gogin</strong></div>
+                <div id="site-footer__links"><a href="styleguide.htm">Styleguide & Citations</a> • <a
+                        href="https://github.com/shaaagri/339-p3">GitHub</a></div>
+            </footer>
+        </div>
+    </div>
+    <div id="bg-anim-container"></div>
+
+    <!--- Execute our scripts after we finished loading the page -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

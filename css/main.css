@@ -296,11 +296,11 @@ section.large-block {
 }
 
 .button-default {
-    color: white;
+    color: white !important;
 }
 
 .button-default:hover, .button-default:focus {
-    color: var(--color-text);
+    color: var(--color-text) !important;
 }
 
 .button-action.short {
@@ -564,12 +564,14 @@ section.large-block {
    
 }
 
-
+.project-card h2 {
+    line-height: 1.166em;
+}
 
 .project-card p {
     width: 100%;
     font-size: 0.918rem;
-    line-height: 1.378rem;
+    line-height: 1.266rem;
 }
 
 .project-card__tags {
@@ -675,9 +677,15 @@ section.large-block {
 #project-breakdown img {
     width: 100%;
     height: 100%;
-    padding-top: 0.33rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.45rem;
     max-height: 33.33rem;
     object-fit: contain;
+}
+
+#project-breakdown iframe {
+    padding-top: 0.66rem;   
+    padding-bottom: 1.45rem;
 }
 
 #project-breakdown li {
@@ -688,17 +696,17 @@ section.large-block {
     display: flex;
     justify-content: center;
     margin-top: -0.33rem;
-    padding-bottom: 7rem !important;
+    padding-bottom: 6rem !important;
 }
 
 #project-breakdown .example-block {
-    padding: 1.33rem 8rem 2.207rem 8rem;
+    padding: 1.33rem 8rem 2.05rem 8rem;
 }
 
 #project-breakdown .example-block-video {
     display: flex;
     justify-content: center;
-    padding: 1.33rem 0 2.207rem 0;
+    padding: 1.33rem 0 2.05rem 0;
 }
 
 #project-breakdown .example-block.reduced,
@@ -1122,8 +1130,11 @@ section.large-block {
         font-size: 1.15em;
     }
     #project-breakdown .example-block {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0.5rem 0 1rem 0;
+    }
+
+    #project-breakdown .example-block-video {
+        padding: 0.5rem 0 1.33rem 0;
     }
 }
 
