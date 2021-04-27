@@ -687,7 +687,7 @@ section.large-block {
 }
 
 #project-breakdown {
-    padding: 0 4.66rem;
+    padding: 0 7.66rem;
 }
 
 #project-breakdown section {
@@ -898,6 +898,7 @@ section.large-block {
 
 .contacts #avatar {
     width: 9.33rem;
+    padding-bottom: 0.5rem;
 }
 
 .contacts p {
@@ -906,13 +907,18 @@ section.large-block {
     padding-bottom: 1rem;
 }
 
+.contacts p #invite-mobile {
+    display: none;
+}
+
 .contacts .social-media-buttons {
     display: inline-flex;
     flex-basis: 100%;
     justify-content: space-between;
     align-items: center;
-    width: 8rem;
-    padding-top: 0.33rem;
+    width: 6rem;
+   
+    padding: 0.33rem 4rem;
     margin: auto;
 }
 
@@ -920,7 +926,7 @@ section.large-block {
     width: 4.0625em;
     height: 4.02625em;
     background-repeat: no-repeat;
-    transform: scale(0.85);
+    transform: scale(0.7);
 }
 
 .contacts .social-media-button.github {
@@ -944,7 +950,7 @@ section.large-block {
 }
 
 .contacts-mail-form h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.33rem;
     text-align: center;
 }
 
@@ -966,7 +972,7 @@ section.large-block {
     align-items: center;
     width: 12.5rem;
     height: 4.779rem;
-    padding-top: 0.166rem;
+    padding-top: 0.3rem;
     margin-top: 1.33rem;
     background-color: transparent;
     background-size: 102%;
@@ -985,6 +991,16 @@ section.large-block {
     cursor: pointer;
 }
 
+.page404 .button-default {
+    margin-top: 4rem;
+}
+
+#hero-header.page404 {
+    padding: 4rem;
+    padding-bottom: 7.062rem;
+    text-align: center;
+}
+
 /*
     ====
     Misc
@@ -992,7 +1008,7 @@ section.large-block {
 */
 
 .text-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 /* for the background animation */
@@ -1136,6 +1152,9 @@ section.large-block {
     #styleguide-container {
         grid-template-columns: 20.66rem 1fr;
     }
+    #styleguide-nav {
+        padding-right: 3.66rem;
+    }
     #project-header {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -1213,9 +1232,11 @@ section.large-block {
     .contacts #left-panel {
         padding-bottom: 4.33rem;
     }
-    .contacts #right-panel {
-        padding: 0;
-        width: 100%;
+    .contacts p #invite-mobile {
+        display: inline;
+    }
+    .contacts p #invite-desktop {
+        display: none;
     }
     .contacts-mail-form .input-text, .contacts-mail-form .input-textarea {
         width: calc(100% - 1.33em);
@@ -1286,6 +1307,10 @@ section.large-block {
     #project-breakdown .example-block-video {
         padding: 0.5rem 0 1.33rem 0;
     }
+    .contacts #right-panel {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1310,29 +1335,6 @@ section.large-block {
         row-gap: 1.66em;
     }
     .project-card {
-        width: calc(100vw - 5.5rem);
+        width: calc(100vw - 4rem);
     }
-}
-
-/* 
-    =============
-    Optimizations
-    =============
-*/
-
-/* 
-    preloading buttons' hovers to avoid that first-time blink 
-    
-    citation used:
-    https://stackoverflow.com/questions/3646036/preloading-images-with-javascript
-*/
-
-#preload-images {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    background: url(../img/ui/nav-button__blue--hover.svg), url(../img/ui/nav-button__green--hover.svg), url(../img/ui/nav-button__red--hover.svg), url(../img/ui/nav-button__yellow--hover.svg), url(../img/ui/button-action__short--hover.svg), url(../img/ui/button-action__med--hover.svg), url(../img/ui/button-default__long--hover.svg);
 }
