@@ -110,6 +110,10 @@ b, strong {
     background-color: var(--color-bg-alt);
 }
 
+iframe {
+    border: 0;
+}
+
 /*
     ==========
     Typography
