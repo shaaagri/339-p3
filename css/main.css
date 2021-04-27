@@ -1027,6 +1027,24 @@ section.large-block {
     text-align: center !important;
 }
 
+/* for the landing page */
+/* Citation: the original idea I took from the portfolio of Marina Martin */
+/* https://www.sfu.ca/~mcmartin/portfoliov3web/index.html */
+
+.fade-in {
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
 /* for the background animation */
 
 #bg-anim-container {
