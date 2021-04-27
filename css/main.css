@@ -1383,3 +1383,15 @@ section.large-block {
         height: 14.5rem;
     }
 }
+
+/* Citation: https://stackoverflow.com/questions/26302278/jquery-css-background-image-preload */
+.preload {
+    position: absolute;
+    /* looks bit lame but should do the trick */
+    top: -9999px;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -9999;
+}
