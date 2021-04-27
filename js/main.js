@@ -38,6 +38,40 @@ $('.example-block, .example-block-video').each(function (index) {
     }
 });
 
+// interactions at the "Contacts" page
+$('.contacts input[type="submit"]').click(function (e) {
+    e.preventDefault();
+    $(this).blur();
+
+    $('.contacts #error-text').hide();
+
+    let formName = $('.contacts input[name="name"]').val();
+    let formSubject = $('.contacts input[name="subject"]').val();
+    let formMessage = $('.contacts textarea').val();
+
+    if (!formName) {
+        $('.contacts #error-text').text("Please, fill in your name.");
+        $('.contacts #error-text').slideDown("fast");
+        return;
+    }
+
+    if (!formSubject) {
+        $('.contacts #error-text').text("Please, fill in the subject of your message.");
+        $('.contacts #error-text').slideDown("fast");
+        return;
+    }
+
+    if (!formMessage) {
+        $('.contacts #error-text').text("Please, fill in the text of your message.");
+        $('.contacts #error-text').slideDown("fast");
+        return;
+    }
+
+    $('.contacts-mail-form').slideUp(function (e) {
+        $('.contacts #message-sent').show();
+    });    
+});
+
 
 // background animation (icons popping in/out randomly)
 

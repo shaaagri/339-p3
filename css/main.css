@@ -894,6 +894,7 @@ section.large-block {
 
 .contacts #left-panel {
     padding-bottom: 9.33rem;
+    margin-top: 4.2rem;
 }
 
 .contacts #avatar {
@@ -916,8 +917,7 @@ section.large-block {
     flex-basis: 100%;
     justify-content: space-between;
     align-items: center;
-    width: 6rem;
-   
+    width: 5rem;
     padding: 0.33rem 4rem;
     margin: auto;
 }
@@ -972,7 +972,7 @@ section.large-block {
     align-items: center;
     width: 12.5rem;
     height: 4.779rem;
-    padding-top: 0.3rem;
+    padding-top: 0.5rem;
     margin-top: 1.33rem;
     background-color: transparent;
     background-size: 102%;
@@ -989,6 +989,22 @@ section.large-block {
     background-image: url(../img/ui/nav-button__red--hover.svg);
     color: var(--color-aux-terracotta);
     cursor: pointer;
+}
+
+.contacts #error-text {
+    display: none;
+    padding-bottom: 1.33rem;
+    color: var(--color-aux-terracotta);
+}
+
+.contacts #message-sent {
+    display: none;
+    padding: 1.33em 1em;
+    margin-top: 13.33rem;
+    color: #04282D;
+    background-color: var(--color-accent);
+    border-radius: 12px;
+    line-height: 1.33em;
 }
 
 .page404 .button-default {
@@ -1241,6 +1257,9 @@ section.large-block {
     .contacts-mail-form .input-text, .contacts-mail-form .input-textarea {
         width: calc(100% - 1.33em);
     }
+    .contacts #message-sent {
+        margin-top: 1.33rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1336,5 +1355,9 @@ section.large-block {
     }
     .project-card {
         width: calc(100vw - 4rem);
+        height: calc(1.33 * (100vw - 4rem));
+    }
+    .project-card__preview {
+        height: 14.5rem;
     }
 }

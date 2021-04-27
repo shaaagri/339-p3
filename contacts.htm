@@ -11,8 +11,8 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -38,7 +38,8 @@
                     <div id="avatar">
                         <img src="img/avatar.png" alt="animoji-style avatar">
                     </div>
-                    <p class="minor">Feel free to find me in social media, or shoot a message directly using the form <span id="invite-desktop">at the right</span><span id="invite-mobile">below</span>!</p>
+                    <p class="minor">Feel free to find me in social media, or shoot a message directly using the form
+                        <span id="invite-desktop">at the right</span><span id="invite-mobile">below</span>!</p>
                     <div class="social-media-buttons">
                         <a href="https://github.com/shaaagri/339-p3">
                             <div class="social-media-button github"></div>
@@ -61,10 +62,14 @@
                         <input class="input-text" type="text" name="name" placeholder="Your name">
                         <input class="input-text" type="text" name="subject" placeholder="Subject">
                         <textarea class="input-textarea" name="mail" placeholder="Your message"></textarea>
+                        <div id="error-text">Please, fill the textarea block.</div>
                         <div class="h-centered-container">
                             <input type="submit" value="send">
                         </div>
                     </form>
+                    <div id="message-sent"><strong>Thanks!</strong> Your message
+                    has been sent. I'll take a look at it soon and get back to
+                    you afterwards.</div>
                 </div>
             </div>
 
